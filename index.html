@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- favicon: icon picked at flaticon.com, favicon generated at favicon-generator.org -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/ico" sizes="48x48" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="150x150" href="assets/icons/mstile-150x150.png">
+    <link rel="icon" type="image/svg" href="assets/icons/safari-pinned-tab.svg">
+
+
+    
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+    <!-- end of favicon -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7cPatua+One">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="logo-container">
+                    <img class="logo" src="assets/logo.png" alt="Portfolio logo">
+                </li>
+                <li class="title-container">
+                    <h1 class="title">Davide Iaiunese</h1>
+                    <p class="subtitle">Front-End Developer</p>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hero-img">
+            <picture>
+                <source media="(max-width: 399px)" srcset="assets/laptop-small.jpg">
+                <source media="(min-width: 400px)" srcset="assets/laptop-medium.jpg">
+                <source media="(min-width: 700px)" srcset="assets/laptop-big.jpg">
+                <img class="hero-img" src="assets/laptop-big.jpg" alt="A laptop on a desk">
+            </picture>
+        </div>
+
+        <section class="work-section">
+            <h2 class="work-heading ">Featured Work</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="project-img-container">
+                        <picture>
+                            <source media="(max-width: 399px)" srcset="assets/appstore-small.jpg">
+                            <source media="(min-width: 400px)" srcset="assets/appstore-sm.jpg">
+                            <img class="project-img" src="assets/appstore.jpg" alt="ios app store picture">
+                        </picture>
+                    </div>
+                    <h3 class="project-name">Appify</h3>
+                    <p class="project-link">https://github.com/udacity/Appify</p>
+                </div>
+                <div class="project">
+                    <div class="project-img-container">
+                        <picture>
+                            <source media="(min-width: 400px)" srcset="assets/sunflower-sm.jpg">
+                            <source media="(max-width: 399px)" srcset="assets/sunflower-small.jpg">
+                            <img class="project-img" src="assets/sunflower.jpg" alt="sunflower on a sunny day">
+                        </picture>
+                    </div>
+                    <h3 class="project-name">Sunflower</h3>
+                    <p class="project-link">https://github.com/udacity/Sunflower</p>
+                </div>
+                <div class="project">
+                    <div class="project-img-container">
+                        <picture>
+                            <source media="(min-width: 400px)" srcset="assets/bokeh-sm.jpg">
+                            <source media="(max-width: 399px)" srcset="assets/bokeh-small.jpg">
+                            <img class="project-img" src="assets/bokeh.jpg" alt="unfocused image showing lights on a summer evening">
+                        </picture>
+                    </div>
+                    <h3 class="project-name">Bokeh</h3>
+                    <p class="project-link">https://github.com/udacity/Bokeh</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
