@@ -1,6 +1,6 @@
 # Portfolio project
 
-![App mockup](assets/devices.jpg?raw?true)
+![Portfolio website on devices](assets/devices.jpg?raw=true)
 
 This repository contains the portfolio project I did for the Google Developer Scholarship. The goal is to replicate [the design mockup](design-mockup-portfolio.pdf?raw=true) while adding customization.
 
