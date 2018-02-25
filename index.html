@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#004c74">
     <title>Portfolio</title>
+    <!-- Font awesome -->
+    <script src="https://use.fontawesome.com/3eb9080354.js"></script>
+    <!-- End of Font awesome -->
     <!-- favicon: icon picked at flaticon.com, favicon generated at favicon-generator.org -->
     <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
@@ -13,7 +17,6 @@
     <link rel="icon" type="image/png" sizes="150x150" href="assets/icons/mstile-150x150.png">
     <link rel="icon" type="image/svg" href="assets/icons/safari-pinned-tab.svg">
     <!-- end of favicon -->
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7cPatua+One">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -22,10 +25,11 @@
     <div class="page-wrapper">
 
         <nav class="navbar">
-            <ul class="nav-list">
+            <ul class="navbar-list">
                 <li class="logo-container">
                     <img class="logo" src="assets/logo.png" alt="Portfolio logo">
                 </li>
+
                 <li class="title-container">
                     <h1 class="title">Davide Iaiunese</h1>
                     <p class="subtitle">Front-End Developer</p>
@@ -35,10 +39,10 @@
 
         <div class="hero-img">
             <picture>
-                <source media="(max-width: 399px)" srcset="assets/laptop-small.jpg">
-                <source media="(min-width: 400px)" srcset="assets/laptop-medium.jpg">
-                <source media="(min-width: 700px)" srcset="assets/laptop-big.jpg">
-                <img class="hero-img" src="assets/laptop-big.jpg" alt="A laptop on a desk">
+                <source media="(max-width: 399px)" srcset="assets/laptop-small.webp">
+                <source media="(min-width: 400px)" srcset="assets/laptop-medium.webp">
+                <source media="(min-width: 700px)" srcset="assets/laptop-big.webp">
+                <img class="hero-img" src="assets/laptop-big.webp" alt="A laptop on a desk">
             </picture>
         </div>
 
@@ -46,44 +50,46 @@
             <h2 class="work-heading ">Featured Work</h2>
             <div class="projects-container">
                 <article class="project">
-                    <div class="project-img-container">
-                        <img class="project-img" 
-                             srcset="assets/appstore-small.jpg 256w,
-                                     assets/appstore-medium.jpg 339w,
-                                     assets/appstore-large-1x.jpg 1000,
-                                     assets/appstore-large-2x.jpg 2000"
-                             alt="ios app store picture"> 
-                    </div>
+                    <img class="project-img" src="assets/appstore-small.webp" srcset="assets/appstore-small.webp 300w,
+                                     assets/appstore-medium.webp 500w,
+                                     assets/appstore-large-1x.webp 800w,
+                                     assets/appstore-large-2x.webp 1600w" sizes="(min-width: 1px) and (max-width: 499px) 80vw,
+                                    (min-width: 500px) and (max-width: 699px) 40vw,
+                                    25vw" alt="ios app store picture">
                     <h3 class="project-name">Appify</h3>
                     <p class="project-link">https://github.com/udacity/Appify</p>
                 </article>
                 <article class="project">
-                    <div class="project-img-container">
-                       <img class="project-img" 
-                             srcset="assets/sunflower-small.jpg 256w,
-                                     assets/sunflower-medium.jpg 339w,
-                                     assets/sunflower-large-1x.jpg 1000,
-                                     assets/sunflower-large-2x.jpg 2000"
-                             alt="sunflower on a sunny day"> 
-                    </div>
+                    <img class="project-img" src="assets/sunflower-small.webp" srcset="assets/sunflower-small.webp 300w,
+                                     assets/sunflower-medium.webp 500w,
+                                     assets/sunflower-large-1x.webp 800w,
+                                     assets/sunflower-large-2x.webp 1600w" sizes="(min-width: 1px) and (max-width: 499px) 80vw,
+                                    (min-width: 500px) and (max-width: 699px) 40vw,
+                                    25vw" alt="sunflower on a sunny day">
                     <h3 class="project-name">Sunflower</h3>
                     <p class="project-link">https://github.com/udacity/Sunflower</p>
                 </article>
                 <article class="project">
-                    <div class="project-img-container">
-                       <img class="project-img" 
-                             srcset="assets/bokeh-small.jpg 256w,
-                                     assets/bokeh-medium.jpg 339w,
-                                     assets/bokeh-large-1x.jpg 1000,
-                                     assets/bokeh-large-2x.jpg 2000"
-                             alt="sunflower on a sunny day"> 
-                    </div>
+                    <img class="project-img" src="assets/bokeh-small.webp" srcset="assets/bokeh-small.webp 300w,
+                                     assets/bokeh-medium.webp 500w,
+                                     assets/bokeh-large-1x.webp 800w,
+                                     assets/bokeh-large-2x.webp 1600w" sizes="(min-width: 1px) and (max-width: 499px) 80vw,
+                                    (min-width: 500px) and (max-width: 699px) 40vw,
+                                    25vw" alt="sunflower on a sunny day">
                     <h3 class="project-name">Bokeh</h3>
                     <p class="project-link">https://github.com/udacity/Bokeh</p>
                 </article>
             </div>
         </main>
 
+        <footer class="footer-section">
+            <ul class="contacts">
+                <li class="contacts-item"><i class="fa fa-github" aria-hidden="true"></i></li>
+                <li class="contacts-item"><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                <li class="contacts-item"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li class="contacts-item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </ul>
+        </footer>
     </div>
 </body>
 
